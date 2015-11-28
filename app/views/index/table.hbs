@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sakinalium Demo Site">
+<meta name="author" content="Sakinalium">
+<title>Web Table | Sakinalium</title>
+<!-- core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+    <link href="/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="/css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+    
+<link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-1.ico">
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 col-xs-2"> <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="logo"></a> </div>
+        <div class="col-sm-8 col-xs-8 title" align="center">
+          <h1>Sakinalium Demo Site</h1>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+  </div>
+  <!--/.top-bar-->
+  <nav class="navbar navbar-inverse" role="banner" style="border-bottom: 1px solid #00579a;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/register">Register</a></li>
+          <li class="active"><a href="/table">Web Table</a></li>
+          <li><a href="/alerts">Alerts</a></li>
+          <li><a href="/frame-window">Frames & Windows</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/accordion">Accordion</a></li>
+              <li><a href="#">AutoComplete</a></li>
+              <li><a href="#">Datepicker</a></li>
+              <li><a href="#">Slider</a></li>
+              <li><a href="#">Tooltip</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Interactions <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Drag and Drop</a></li>
+              <li><a href="#">Resizable</a></li>
+              <li><a href="#">Selectable</a></li>
+              <li><a href="#">Sortable</a></li>
+            </ul>
+          </li>
+          <li><a href="/video">Video</a></li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+    </div>
+    <!--/.container-->
+  </nav>
+  <!--/nav-->
+</header>
+<!--/header-->
+<section id="feature" class="transparent-bg">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <div class="panel-body">
+        <div class="table-responsive">
+          <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="dataTables_length" id="dataTables-example_length">
+                  <label>
+                  <select name="dataTables-example_length" aria-controls="dataTables-example" class="form-control input-sm">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                  records per page</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div id="dataTables-example_filter" class="dataTables_filter">
+                  <label>
+                  <input type="search" class="form-control input-sm" aria-controls="dataTables-example" placeholder="Search">
+                  <input type="button" value="search" style="width:60px;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" aria-describedby="dataTables-example_info">
+              <thead>
+                <tr role="row">
+                  <th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending" style="width: 181px;">First Name</th>
+                  <th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending" style="width: 181px;">Last Name</th>
+                  <th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending" style="width: 181px;">Emaile</th>
+                  <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 242px;">Phone</th>
+                  <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 222px;">Gender</th>
+                  <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 156px;">DOB</th>
+                  <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 114px;">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gradeA odd">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+                <tr class="gradeA even success">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+                <tr class="gradeA odd">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+                <tr class="gradeA even danger">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr><tr class="gradeA odd">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+                <tr class="gradeA even warning">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr><tr class="gradeA odd">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+                <tr class="gradeA even success">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+                <tr class="gradeA odd">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+                <tr class="gradeA even danger">
+                  <td class="sorting_1">Sakinalium</td>
+                  <td class=" ">Demo</td>
+                  <td class=" ">test@gmail.com</td>
+                  <td class="center ">+91-1234567890</td>
+                  <td class="center ">Male</td>
+                  <td class="center ">05-07-1991</td>
+                  <td class="center ">
+                                                  <button class="btn btn-xs btn-custom"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="dataTables_info" id="dataTables-example_info" role="alert" aria-live="polite" aria-relevant="all">Showing 1 to 10 of 57 entries</div>
+              </div>
+              <div class="col-sm-6">
+                <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
+                  <ul class="pagination">
+                    <li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#">Previous</a></li>
+                    <li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>
+                    <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li>
+                    <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li>
+                    <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li>
+                    <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>
+                    <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">6</a></li>
+                    <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">Next</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.table-responsive -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--/register content-->
+<!--/#bottom-->
+<footer id="footer" class="midnight-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6"> &copy; 2015 <a target="_blank" href="#" title="Sakinalium Demo Site">Sakinalium</a>. All Rights Reserved. </div>
+      <div class="col-sm-6 social pull-right"> <a href="#" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a> <a href="#" class="link twitter" target="_blank"><span class="fa fa-twitter-square"></span></a> <a href="#" class="link linkedin" target="_blank"><span class="fa fa-linkedin-square"></span></a> <a href="#" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a> </div>
+    </div>
+  </div>
+</footer>
+<!--/#footer-->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/wow.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+    <script src="/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+<!-- DataTables JavaScript -->
+    <script src="/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
+</body>
+</html>

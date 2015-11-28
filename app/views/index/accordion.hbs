@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sakinalium Demo Site">
+<meta name="author" content="Sakinalium">
+<title>Accordion | Sakinalium</title>
+<!-- core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-1.ico">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<style>
+	#accordion-resizer {
+		padding: 10px;
+		width: 350px;
+		height: 220px;
+	}
+	</style>
+	<script>
+	$(function() {
+		$( "#accordion" ).accordion({
+			heightStyle: "fill"
+		});
+	});
+	$(function() {
+		$( "#accordion-resizer" ).resizable({
+			minHeight: 140,
+			minWidth: 200,
+			resize: function() {
+				$( "#accordion" ).accordion( "refresh" );
+			}
+		});
+	});
+	</script>
+
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 col-xs-2"> <a class="navbar-brand" href="index.html"><img src="/images/logo.png" alt="logo"></a> </div>
+        <div class="col-sm-8 col-xs-8 title" align="center">
+          <h1>Sakinalium Demo Site</h1>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+  </div>
+  <!--/.top-bar-->
+  <nav class="navbar navbar-inverse" role="banner" style="border-bottom: 1px solid #00579a;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/register">Register</a></li>
+          <li><a href="/table">Web Table</a></li>
+          <li><a href="/alerts">Alerts</a></li>
+          <li><a href="/frame-window">Frames & Windows</a></li>
+          <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="accordion.hbs">Accordion</a></li>
+              <li><a href="#">AutoComplete</a></li>
+              <li><a href="#">Datepicker</a></li>
+              <li><a href="#">Slider</a></li>
+              <li><a href="#">Tooltip</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Interactions <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Drag and Drop</a></li>
+              <li><a href="#">Resizable</a></li>
+              <li><a href="#">Selectable</a></li>
+              <li><a href="#">Sortable</a></li>
+            </ul>
+          </li>
+          <li><a href="/video">Video</a></li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+    </div>
+    <!--/.container-->
+  </nav>
+  <!--/nav-->
+</header>
+<!--/header-->
+<section id="feature" class="transparent-bg">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <section id="content">
+        <div class="container" style="padding-top:50px;">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+              <div class="tab-wrap">
+                <div class="media">
+                  <div class="parrent pull-left">
+                    <ul class="nav nav-tabs nav-stacked">
+                      <li class="active"><a href="#tab1" data-toggle="tab" class="analistic-01">Default Functionality</a></li>
+                      <li class=""><a href="#tab2" data-toggle="tab" class="analistic">Customize Icons</a></li>
+                      <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Fill Space</a></li>
+                    </ul>
+                  </div>
+                  <div class="parrent media-body">
+                    <div class="tab-content">
+                      <div class="tab-pane fade active in" id="tab1">
+                        <div class="media">
+                          <div class="media-body">
+                              <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a> </h4>
+                                  </div>
+                                  <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a> </h4>
+                                  </div>
+                                  <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a> </h4>
+                                  </div>
+                                  <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="tab2">
+                        <div class="media">
+                          <div class="media-body"> 
+                          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="tab3"> </div>
+                    </div>
+                    <!--/.tab-content-->
+                  </div>
+                  <!--/.media-body-->
+                </div>
+                <!--/.media-->
+              </div>
+              <!--/.tab-wrap-->
+            </div>
+            <!--/.col-sm-6-->
+          </div>
+          <!--/.row-->
+        </div>
+        <!--/.container-->
+      </section>
+    </div>
+  </div>
+</section>
+<!--/register content-->
+<!--/#bottom-->
+<footer id="footer" class="midnight-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6"> &copy; 2015 <a target="_blank" href="#" title="Sakinalium Demo Site">Sakinalium</a>. All Rights Reserved. </div>
+      <div class="col-sm-6 social pull-right"> <a href="#" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a> <a href="#" class="link twitter" target="_blank"><span class="fa fa-twitter-square"></span></a> <a href="#" class="link linkedin" target="_blank"><span class="fa fa-linkedin-square"></span></a> <a href="#" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a> </div>
+    </div>
+  </div>
+</footer>
+<!--/#footer-->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/wow.min.js"></script>
+</body>
+</html>

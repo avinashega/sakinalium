@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sakinalium Demo Site">
+<meta name="author" content="Sakinalium">
+<title>Alerts | Sakinalium</title>
+<!-- core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-1.ico">
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 col-xs-2"> <a class="navbar-brand" href="index.html"><img src="/images/logo.png" alt="logo"></a> </div>
+        <div class="col-sm-8 col-xs-8 title" align="center">
+          <h1>Sakinalium Demo Site</h1>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+  </div>
+  <!--/.top-bar-->
+  <nav class="navbar navbar-inverse" role="banner" style="border-bottom: 1px solid #00579a;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/register">Register</a></li>
+          <li><a href="/table">Web Table</a></li>
+          <li class="active"><a href="/alerts">Alerts</a></li>
+          <li><a href="/frame-window">Frames & Windows</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/accordion">Accordion</a></li>
+              <li><a href="#">AutoComplete</a></li>
+              <li><a href="#">Datepicker</a></li>
+              <li><a href="#">Slider</a></li>
+              <li><a href="#">Tooltip</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Interactions <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Drag and Drop</a></li>
+              <li><a href="#">Resizable</a></li>
+              <li><a href="#">Selectable</a></li>
+              <li><a href="#">Sortable</a></li>
+            </ul>
+          </li>
+          <li><a href="/video">Video</a></li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+    </div>
+    <!--/.container-->
+  </nav>
+  <!--/nav-->
+</header>
+<!--/header-->
+<section id="feature" class="transparent-bg">
+  <div class="container">
+    <div class="center wow fadeInDown">
+      <section id="content">
+        <div class="container" style="padding-top:50px;">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+              <div class="tab-wrap">
+                <div class="media">
+                  <div class="parrent pull-left">
+                    <ul class="nav nav-tabs nav-stacked">
+                      <li class="active"><a href="#tab1" data-toggle="tab" class="analistic-01">Alert with OK</a></li>
+                      <li class=""><a href="#tab2" data-toggle="tab" class="analistic">Alert with OK & Cancle</a></li>
+                      <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Alert with Textbox</a></li>
+                    </ul>
+                  </div>
+                  <div class="parrent media-body">
+                    <div class="tab-content">
+                      <div class="tab-pane fade active in" id="tab1">
+                        <div class="media">
+                          <div class="media-body">
+                            <button  class="btn btn-danger" onclick="alertbox()">Click the button to display an alert box:</button>
+                            <script>
+function alertbox() {
+    alert("I am an alert box!");
+}
+</script>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="tab2">
+                        <div class="media">
+                          <div class="media-body">
+                            <button class="btn btn-primary" onclick="confirmbox()">Click the button to display a confirm box.</button>
+                            <p id="demo"></p>
+                            <script>
+function confirmbox() {
+    var x;
+    if (confirm("Press a button!") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="tab3">
+                        <button class="btn btn-info" onclick="promptbox()">Click the button to demonstrate the prompt box.</button>
+                        <p id="demo"></p>
+                        <script>
+function promptbox() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
+                      </div>
+                    </div>
+                    <!--/.tab-content-->
+                  </div>
+                  <!--/.media-body-->
+                </div>
+                <!--/.media-->
+              </div>
+              <!--/.tab-wrap-->
+            </div>
+            <!--/.col-sm-6-->
+          </div>
+          <!--/.row-->
+        </div>
+        <!--/.container-->
+      </section>
+    </div>
+  </div>
+</section>
+<!--/register content-->
+<!--/#bottom-->
+<footer id="footer" class="midnight-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6"> &copy; 2015 <a target="_blank" href="#" title="Sakinalium Demo Site">Sakinalium</a>. All Rights Reserved. </div>
+      <div class="col-sm-6 social pull-right"> <a href="#" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a> <a href="#" class="link twitter" target="_blank"><span class="fa fa-twitter-square"></span></a> <a href="#" class="link linkedin" target="_blank"><span class="fa fa-linkedin-square"></span></a> <a href="#" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a> </div>
+    </div>
+  </div>
+</footer>
+<!--/#footer-->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/wow.min.js"></script>
+</body>
+</html>

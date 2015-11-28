@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sakinalium Demo Site">
+    <meta name="author" content="Sakinalium">
+    <title>Register | Sakinalium</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/ico/favicon-1.ico">
+</head>
+<!--/head-->
+<body class="homepage">
+<header id="header">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-xs-2"> <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> </div>
+                <div class="col-sm-8 col-xs-8 title" align="center">
+                    <h1>Sakinalium Demo Site</h1>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.top-bar-->
+    <nav class="navbar navbar-inverse" role="banner" style="border-bottom: 1px solid #00579a;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="register.html">Register</a></li>
+                    <li><a href="table.html">Web Table</a></li>
+                    <li><a href="alerts.html">Alerts</a></li>
+                    <li><a href="frame-window.html">Frames & Windows</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="accordion.html">Accordion</a></li>
+                            <li><a href="#">AutoComplete</a></li>
+                            <li><a href="#">Datepicker</a></li>
+                            <li><a href="#">Slider</a></li>
+                            <li><a href="#">Tooltip</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Interactions <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Drag and Drop</a></li>
+                            <li><a href="#">Resizable</a></li>
+                            <li><a href="#">Selectable</a></li>
+                            <li><a href="#">Sortable</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="video.html">Video</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+        <!--/.container-->
+    </nav>
+    <!--/nav-->
+</header>
+<!--/header-->
+<section id="feature" class="transparent-bg">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Register</h2>
+            <div class="col-xs-6 col-xs-offset-2">
+                <form id="basicBootstrapForm" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Full name*</label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" name="firstName" placeholder="First name" />
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" name="lastName" placeholder="Last name" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Address</label>
+                        <div class="col-xs-5">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Email address*</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" name="email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Phone*</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" name="phone" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Gender*</label>
+                        <div class="col-xs-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">
+                                Male</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">
+                                Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label" id="captchaOperation">Hobies</label>
+                        <div class="col-xs-4">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Checkbox 1</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Checkbox 1</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Checkbox 1</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Country*</label>
+                        <div class="col-xs-5">
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday" class="col-xs-3 col-sm-3 control-label">Date of Birth*</label>
+                        <div class="col-xs-3">
+                            <input type="text" class="form-control" placeholder="year"/>
+                        </div>
+                        <div class="col-xs-3">
+                            <input type="text" class="form-control" placeholder="month"/>
+                        </div>
+                        <div class="col-xs-3">
+                            <input type="text" class="form-control" placeholder="day"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Password*</label>
+                        <div class="col-xs-5">
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">ConfirmPassword*</label>
+                        <div class="col-xs-5">
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-9 col-xs-offset-3">
+                            <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-4">
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Photo</label>
+                    <div class="col-xs-5">
+                        <img src="" class="" style="width:100px; height:100px; border:1px solid #555; margin:15px;" />
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/register content-->
+<!--/#bottom-->
+<footer id="footer" class="midnight-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"> &copy; 2015 <a target="_blank" href="#" title="Sakinalium Demo Site">Sakinalium</a>. All Rights Reserved. </div>
+            <div class="col-sm-6 social pull-right"> <a href="#" class="link facebook" target="_blank"><span class="fa fa-facebook-square"></span></a> <a href="#" class="link twitter" target="_blank"><span class="fa fa-twitter-square"></span></a> <a href="#" class="link linkedin" target="_blank"><span class="fa fa-linkedin-square"></span></a> <a href="#" class="link google-plus" target="_blank"><span class="fa fa-google-plus-square"></span></a> </div>
+        </div>
+    </div>
+</footer>
+<!--/#footer-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+</body>
+</html>
