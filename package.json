@@ -16,7 +16,8 @@
     "underscore": "*",
     "q": "*",
     "mongoskin": "*",
-    "getconfig": "*"
+    "getconfig": "*",
+    "body-parser" : "*"
   },
   "engines": {
     "node": "0.10.*",

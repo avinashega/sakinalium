@@ -1,8 +1,0 @@
-{
-    "http": {
-        "port": 8000,
-        "host": "0.0.0.0"
-    },
-
-    "mongodb": "mongodb://heroku_app20050920:7uv34j8jru6pakqbjf531g2ukk@ds059898.mongolab.com:59898/heroku_app20050920?auto-reconnect"
-}

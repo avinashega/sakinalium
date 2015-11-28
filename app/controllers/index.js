@@ -1,3 +1,5 @@
+var user = require('../collections/users');
+
 module.exports = {
     index: function (req, resp) {
         resp.render('index');
@@ -39,8 +41,15 @@ module.exports = {
         resp.render('alerts');
     },
 
+    signup : function (req, res) {
+      user.insert(req.body, function(err, result) {
+        res.redirect('/');
+      });
+    },
+
     routes: function (app) {
         app.get('/', this.index);
+        app.get('/index', this.index);
         app.get('/register', this.register);
         app.get('/table', this.table);
         app.get('/accordion', this.accordion);
@@ -50,5 +59,6 @@ module.exports = {
         app.get('/frame3', this.frame3);
         app.get('/video', this.video);
         app.get('/alerts', this.alerts);
+        app.post('/register', this.signup);
     }
 };

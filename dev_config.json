@@ -1,8 +1,0 @@
-{
-    "http": {
-        "port": 8000,
-        "host": "0.0.0.0"
-    },
-
-    "mongodb": "localhost:27017/hugh-test?auto_reconnect"
-}

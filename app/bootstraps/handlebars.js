@@ -1,5 +1,4 @@
-var hbs = require('express-hbs'),
-    moment = require('moment');
+var hbs = require('express-hbs')
 
 module.exports = function (app) {
 
